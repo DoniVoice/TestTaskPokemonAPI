@@ -1,0 +1,17 @@
+.container{
+    z-index: 6;
+}
+.logo{
+    grid-area: logo;
+    text-transform: uppercase;
+}
+
+.title{
+    color: white;
+}
+
+.navlink{
+    text-decoration: none;
+}
+
+

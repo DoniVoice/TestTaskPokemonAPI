@@ -1,0 +1,89 @@
+.container{
+    display: grid;
+    grid-template-columns: 100px 40px;
+    grid-gap: 0 0;
+}
+
+.searchName{
+    width: 60px;
+    left: 0;
+    top: 50%;
+    position: fixed;
+    background-color:#01273a;
+    color: white;
+    transition: all 0.5s ease 0s;
+    border: 1px solid #e5ebef;
+    border-left: 0;
+    padding: 4px;
+}
+
+.searchNameActive{
+    width: 60px;
+    left: 208px;
+    top: 50%;
+    position: fixed;
+    background-color:#01273a;
+    color: white;
+    transition: all 0.5s ease 0s;
+    border: 1px solid #e5ebef;
+    padding: 4px;
+}
+
+@-moz-document url-prefix()
+{
+    .searchNameActive{
+        width: 60px;
+        left: 192px;
+        top: 50%;
+        position: fixed;
+        transition: all 0.5s ease 0s;
+        border: 0;
+        padding: 4px;
+    }
+}
+
+
+.list{
+    height: 70%;
+    width: 100px;
+    left: -100px;
+    overflow: auto;
+    background-color: #fff;
+    position: fixed;
+    transition: all 0.5s ease 0s;
+    z-index: 2;
+}
+
+.active{
+    height: 70%;
+    margin: 0;
+    overflow: auto;
+    background-color: #fff;
+    position: fixed;
+    transition: all 0.5s ease 0s;
+    z-index: 2;
+    box-shadow: 7px 7px 8px 2px rgba(34, 60, 80, 0.2);
+}
+
+.container ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.container ul li{
+    color: black;
+}
+
+.container ul li:hover{
+    background-color: grey;
+}
+
+.navlink{
+    text-decoration: none;
+}
+
+@media (max-width: 1200px){   
+    .searchNameActive, y:-moz-any-link{
+        left: 252px;
+    }
+}

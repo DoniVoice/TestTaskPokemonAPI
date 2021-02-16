@@ -1,0 +1,64 @@
+.counter{
+    display: grid;
+    grid-template-columns: 20% repeat(3, 3%);
+    justify-content: end;
+    width: 99%;
+}
+
+.counter_title{
+    margin: 10px;
+    padding: 2px;
+    width: 100%;
+}
+
+.counter_numbers{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background-color: #fff;
+    padding: 2px;
+}
+
+.counter_numbersOn{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background-color:grey;
+    padding: 2px;
+}
+
+.counter_numbers:hover{
+    background-color: grey;
+}
+
+@media (max-width: 1200px){   
+    .counter{
+        grid-template-columns: 22% repeat(3, 4%);
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px){   
+    .counter{
+        grid-template-columns: 27% repeat(3, 5%);
+    }
+}
+
+@media (max-width: 767px){   
+    .counter{
+        grid-template-columns: 36% repeat(3, 7%);
+    }
+}
+
+@media (max-width: 599px){   
+    .counter{
+        grid-template-columns: 55% repeat(3, 10%);
+        justify-content: center;
+    }
+}
+
+@media (max-width: 479px){   
+    .counter{
+        display: none;
+    }
+}

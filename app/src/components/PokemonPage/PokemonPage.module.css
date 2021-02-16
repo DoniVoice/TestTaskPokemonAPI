@@ -1,0 +1,43 @@
+.container{
+    display: grid;
+    align-items: center;
+    height: 80vh;
+}
+.pokemon{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "image"
+    "name"
+    "height"
+    "weight"
+    "stats"
+    "type";
+    justify-items: center;
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+.image{
+    grid-area: image;
+}
+
+.name{
+    grid-area: name;
+}
+
+.height{
+    grid-area: height;
+}
+
+.weight{
+    grid-area: weight;
+}
+.stats{
+    grid-area: stats;
+}
+
+.type{
+    grid-area: type;
+    justify-items: start;
+}
